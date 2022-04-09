@@ -1,0 +1,186 @@
+{
+    "operation_type": "root",
+    "name": "null",
+    "flow": [
+        {
+            "operation_type": "branch",
+            "param": {},
+            "flow": [
+                {
+                    "operation_type":"root",
+                    "name":"mapper_loop",
+                    "flow":[
+                        {
+                            "operation_type":"loop",
+                            "param":{},
+                            "flow":[
+                                {
+                                    "operation_type": "mig_mapper",
+                                    "param": {
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "operation_type":"root",
+                    "name":"fun_reduc_loop",
+                    "flow":[
+                        {
+                            "operation_type":"loop",
+                            "param":{},
+                            "flow":[
+                                {
+                                    "operation_type": "mig_fun_reduc",
+                                    "param": {
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "operation_type":"root",
+                    "name":"rewr_loop",
+                    "flow":[
+                        {
+                            "operation_type":"loop",
+                            "param":{},
+                            "flow":[
+                                {
+                                    "operation_type": "mig_cr",
+                                    "param": {
+                                        "cut_enumeration_ps.cut_size" : 4
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "operation_type":"root",
+                    "name":"resub_loop",
+                    "flow":[
+                        {
+                            "operation_type":"loop",
+                            "param":{},
+                            "flow":[
+                                {
+                                    "operation_type": "mig_resub",
+                                    "param": {
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "operation_type":"root",
+                    "name":"algeabric_loop",
+                    "flow":[
+                        {
+                            "operation_type":"loop",
+                            "param":{},
+                            "flow":[
+                                {
+                                    "operation_type": "mig_algb_reduc",
+                                    "param": {
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "operation_type": "branch",
+            "param": {},
+            "flow": [
+                {
+                    "operation_type":"root",
+                    "name":"mapper_loop_no_required_time",
+                    "flow":[
+                        {
+                            "operation_type":"loop",
+                            "param":{},
+                            "flow":[
+                                {
+                                    "operation_type": "mig_mapper",
+                                    "param": {
+                                        "required_time":1.7976931348623157e308
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "operation_type":"root",
+                    "name":"mapper_loop_ela_rounds",
+                    "flow":[
+                        {
+                            "operation_type":"loop",
+                            "param":{},
+                            "flow":[
+                                {
+                                    "operation_type": "mig_mapper",
+                                    "param": {
+                                        "ela_rounds":6
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "operation_type":"root",
+                    "name":"mapper_loop_logic_sharing",
+                    "flow":[
+                        {
+                            "operation_type":"loop",
+                            "param":{},
+                            "flow":[
+                                {
+                                    "operation_type": "mig_mapper",
+                                    "param": {
+                                        "enable_logic_sharing":true
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "operation_type": "branch",
+            "param": {},
+            "flow": [
+                {
+                    "operation_type":"root",
+                    "name":"cut_loop_with_dc",
+                    "param":{},
+                    "flow":[
+                        {
+                            "operation_type":"loop",
+                            "param":{},
+                            "flow":[
+                                {
+                                    "operation_type":"mig_cr",
+                                    "param":{
+                                        "cut_enumeration_ps.cut_size" : 4,
+                                        "use_dont_cares":true
+                                    }
+                                }
+                            ]
+
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+        
+}
