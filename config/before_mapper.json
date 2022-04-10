@@ -1,0 +1,58 @@
+{
+    "operation_type": "root",
+    "name": "0",
+    "flow": [
+        {
+            "operation_type": "branch",
+            "param": {},
+            "flow": [
+                {
+                    "operation_type": "root",
+                    "name": "0",
+                    "flow": [
+                        {
+                            "operation_type":"mig_resub",
+                            "param":{}
+                        }
+                    ]
+                },
+                {
+                    "operation_type": "root",
+                    "name": "0",
+                    "flow": [
+                        {
+                            "operation_type":"mig_cr",
+                            "param":{}
+                        }
+                    ]
+                },
+                {
+                    "operation_type": "root",
+                    "name": "0",
+                    "flow": [
+                        {
+                            "operation_type":"mig_resub",
+                            "param":{}
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "operation_type": "loop",
+            "param": {},
+            "flow": [
+                {
+                    "operation_type": "mig_mapper",
+                    "param": {
+                        "skip_delay_round": true,
+                        "required_time": 1.7976931348623157e308,
+                        "ela_rounds": 3,
+                        "enable_logic_sharing": true,
+                        "logic_sharing_cut_limit": 1
+                    }
+                }
+            ]
+        }
+    ]
+}
