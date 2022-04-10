@@ -1,0 +1,58 @@
+[
+    
+    //root
+    {
+        "operation_type": "root",
+        "name":"default",
+        "flow": [
+            //contains a flow of operation
+        ]
+    },
+    //end : NOT USED
+    {
+        "operation_type": "end"
+    },
+    //branch
+    {
+        "operation_type": "branch",
+        "param": {},
+        "flow":[
+            //contains a flow of only root
+        ]
+    },
+    //loop
+    {
+        "operation_type": "loop",
+        "param":{
+            "end_condition": [
+                "no-size-increase", //default
+                "max_rep",
+                "size&max_rep"
+            ],
+            "max_rep": "int" //only if end_condition contains max_rep
+        },
+        "flow":[
+            //contains a flow of operation
+        ]
+        
+    },
+ 
+
+
+    
+    //mapper
+    {
+        "operation_type": "mig_mapper",
+        "param":{
+            "required_time": "double", //0
+            "skip_delay_round":"bool",  //false
+            "area_flow_rounds":"int", //1
+            "ela_rounds":"int", //2
+            "eswp_rounds":"int", //0
+            "switching_activity_patterns":"int", //2048
+            "enable_logic_sharing":"bool", //false
+            "logic_sharing_cut_limit":"int" //8
+            
+        }
+    }
+]

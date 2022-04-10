@@ -1,0 +1,10 @@
+- map -> initial mapping size or depth, area recovery  
+- mig_resubstition -> size 
+- mig_alg_rewriting -> depth 
+- cut_rewriting -> area_recovery
+- functionnal reduction -> before map First thing, maybe after map -> size   
+
+
+- add AIG_NETWORK
+- fix if_stream for json
+
