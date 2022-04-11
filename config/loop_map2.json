@@ -4,7 +4,10 @@
     "flow": [
         {
             "operation_type": "loop",
-            "param": {},
+            "param": {
+                "end_condition": "size&max_rep",
+                "max_rep": 3
+            },
             "flow": [
                 {
                     "operation_type": "mig_mapper",

@@ -18,17 +18,18 @@
                 },
                 {
                     "operation_type": "root",
-                    "name": "0",
+                    "name": "1",
                     "flow": [
                         {
                             "operation_type":"mig_cr",
-                            "param":{}
+                            "param":{
+                            }
                         }
                     ]
                 },
                 {
                     "operation_type": "root",
-                    "name": "0",
+                    "name": "2",
                     "flow": [
                         {
                             "operation_type":"mig_resub",

@@ -8,7 +8,13 @@
             "flow": [
                 {
                     "operation_type": "mig_mapper",
-                    "param": {}
+                    "param": {
+                        "skip_delay_round": true,
+                        "required_time": 1.7976931348623157e308,
+                        "ela_rounds": 3,
+                        "enable_logic_sharing": true,
+                        "logic_sharing_cut_limit": 1
+                    }
                 }
             ]
         },
