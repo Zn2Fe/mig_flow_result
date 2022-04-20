@@ -1,11 +1,39 @@
 {
     "operation_type": "root",
+    "do":[
+        "div"
+    ],
     "name": "0",
     "flow": [
         {
+            "operation_type": "branch",
+            "param": {},
+            "flow": [
+                {
+                    "operation_type": "root",
+                    "name": "0",
+                    "flow": [
+                        {
+                            "operation_type": "mig_mapper",
+                            "param": {}
+                        }
+                    ]
+                },
+                {
+                    "operation_type": "root",
+                    "name": "1",
+                    "flow": [
+                        {
+                            "operation_type": "mig_mapper",
+                            "param": {}
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "operation_type": "mig_mapper",
-            "param": {
-            }
+            "param": {}
         }
     ]
 }
