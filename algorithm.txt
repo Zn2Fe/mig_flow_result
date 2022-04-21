@@ -8,3 +8,14 @@
 - add AIG_NETWORK
 - fix if_stream for json
 
+abc: src/base/abc/abcFanio.c:92: Abc_ObjAddFanin: Assertion `!Abc_ObjIsNet(pObj) || !Abc_ObjFaninNum(pObj)' failed.
+Aborted (core dumped)
+
+loop_map
+loop_map1
+loop_map2
+mig_resub
+
+
+killed
+
