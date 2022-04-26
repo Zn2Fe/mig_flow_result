@@ -1,0 +1,4 @@
+benchmark;flow;size;size_mig;depth;depth_mig;runtime
+adder;map_l_1;1020;384;255;129;0.57004493
+bar;map_l_1;3336;2588;12;13;16.270271
+div;map_l_1;57247;36875;4372;2238;113.28103
