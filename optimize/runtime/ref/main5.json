@@ -1,6 +1,6 @@
 {
     "operation_type": "root",
-    "name": "main",
+    "name": "ref_main5",
     "do": [
         "adder", "bar", "div", "hyp", "log2", "max", "multiplier", "sin", "sqrt", "square",
         "arbiter", "cavlc", "ctrl", "dec", "i2c", "int2float", "mem_ctrl", "priority", "router", "voter"
@@ -94,7 +94,24 @@
                             }
                         }
                     ]
+                },
+                {
+                    "operation_type": "loop",
+                    "param": {
+                        "end_condition": "size&max_rep",
+                        "max_rep": 1
+                    },
+                    "flow": [
+                        {
+                            "operation_type": "mig_algb_reduc",
+                            "param":{
+
+                                
+                            }
+                        }
+                    ]
                 }
+
             ]
         }
     ]
